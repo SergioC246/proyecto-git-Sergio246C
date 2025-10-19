@@ -1,26 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git/GitHub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
-<body>
 
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-        </ul>
-    </nav>
+<body>   
+
+    <h1>Biblia de Git y GitHub</h1>
 
     <main>
+        <h2>Mandamientos intocables</h2>
+        <ul>
+            <li>
+                Lo que no te toca, no se toca. (Ni lo veas)
+            </li>
+            <li>
+                Nunca se trabaja en Main. (git checkout -b develop)
+            </li>
+            <li>
+                Nunca se trabaja en Develop. (git checkout -b rama a trabajar)
+            </li>
+            <li>
+                Al crear una rama hacer un push a esa rama para crearla en GitHub (git push origin rama)
+            </li>
+            <li>
+                Siempre se hace el push a la rama de trabajo. (git push origin rama)
+            </li>
+            <li>
+                Las ramas de trabajo tienen que tener nombres descriptivos. (navbar, header, main, footer, etc)
+            </li>
+            <li>
+                Los mensajes del commit deben ser descriptivos. (git commit -m "footer done")
+            </li>
+            <li>
+                Antes de un push va un pull de develop. (pull origin develop y luego git push origin rama)
+            </li>
+            <li>
+                Antes de comenzar a trabajar en tu rama hacer un pull de develop. (pull origin develop)
+            </li>
+            <li>
+                Cada vez que alguien modifique develop, hacer un pull. (pull origin develop)
+            </li>
+        </ul>
 
+        <h3>Comandos más usados</h3>
+        <ul>
+            <li>
+                git remote -v (te dice en que rama estas conectado)
+            </li>
+            <li>
+               git push origin rama (se utiliza para subir la información actulizada) 
+            </li>
+            <li>
+                git checkout (se utiliza para cambiar de rama)
+            </li>
+            <li>
+                git checkout -b rama (se utiliza para cambiar y crear una nueva rama)
+            </li>
+            <li>
+                git switch (se utiliza para cambiar a la última rama que estuviste)
+            </li>
+            <li>
+                git branch -a (te dice todas las ramas que hay en el proyecto)
+            </li>
+            <li>
+                git diff (te dice lo que se ha modificado y no se ha agregado)
+            </li>
+            <li>
+                git status (te dice el estado del proyecto)
+            </li>            
+        </ul>
     </main>
 
     <footer>
         <p>No nos olvidemos de aplicar siempre las buenas técnicas para que el proyecto quede impecable</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
